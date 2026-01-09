@@ -3,64 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的品牌｜官方網站</title>
+  <title>萊旅遊｜品牌官網</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="header">
-    <nav class="nav">
-      <div class="logo">藍圖旅行 Thai LandTour Travel</div>
-      <div class="menu">
-        <a href="#about">關於我們</a>
-        <a href="#services">包車、地陪、各類票券代訂</a>
-        <a href="#contact">https://www.instagram.com/thai_landtour_travel/reels/</a>
-      </div>
-    </nav>
 
-    <div class="hero">
-      <h1>打造你的品牌，從這裡開始</h1>
-      <p>我們提供專業的服務，讓你的品牌更有影響力。</p>
-      <a class="btn" href="#contact">立即聯絡我們</a>
+<body>
+  <!-- 導覽列 -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">Like Travel</div>
+      <nav class="menu">
+        <a href="#tours">團體行程</a>
+        <a href="#services">服務介紹</a>
+        <a href="#custom">訂製旅遊</a>
+        <a class="menu-btn" href="#contact">立即訂購</a>
+      </nav>
     </div>
   </header>
 
-  <main class="main">
-    <section id="about" class="section">
-      <h2>關於我們</h2>
-      <p>這裡放你的品牌介紹，例如：成立背景、使命、願景，或你想強調的特色。</p>
-    </section>
-
-    <section id="services" class="section">
-      <h2>我們的服務</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>服務一</h3>
-          <p>簡短描述你的服務內容。</p>
-        </div>
-        <div class="card">
-          <h3>服務二</h3>
-          <p>簡短描述你的服務內容。</p>
-        </div>
-        <div class="card">
-          <h3>服務三</h3>
-          <p>簡短描述你的服務內容。</p>
-        </div>
+  <!-- Hero 首屏 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>生活可以被喜歡的事情填滿</h1>
+      <p>精緻的旅程由你決定，而旅程的細碎由我們策劃。世界很大，跟我們一起收藏。</p>
+      <div class="hero-btns">
+        <a class="btn primary" href="#custom">開始訂製</a>
+        <a class="btn ghost" href="#tours">查看行程</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-      <h2>聯絡我們</h2>
-      <p>📧 Email：contact@yourbrand.com</p>
-      <p>📞 電話：0900-000-000</p>
-      <p>📍 地址：台灣某某市某某區</p>
-      <button class="btn" id="helloBtn">點我打招呼</button>
-    </section>
-  </main>
+  <!-- 服務特色 -->
+  <section id="services" class="section">
+    <h2>你的旅遊專屬顧問</h2>
+    <p class="section-desc">從規劃、訂位、到在地帶玩，一站式讓你安心出發。</p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>訂製化服務</h3>
+        <p>打造專屬旅程，輕鬆享受自由行。</p>
+      </div>
+      <div class="feature">
+        <h3>客製化需求</h3>
+        <p>預算、天數、旅行風格符合期待。</p>
+      </div>
+      <div class="feature">
+        <h3>獨家精緻服務</h3>
+        <p>貴賓室、快速通關、私房景點一次到位。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 行程卡片 -->
+  <section id="tours" class="section alt">
+    <h2>熱門行程推薦</h2>
+    <p class="section-desc">從亞洲到海島，挑選你最想出發的目的地。</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-body">
+          <h3>北海道｜小樽漫步輕旅行</h3>
+          <p>冬季雪景、溫泉、美食一次收藏。</p>
+          <a class="card-link" href="#contact">立即詢問 →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-body">
+          <h3>京都｜古城深度之旅</h3>
+          <p>神社、老街、四季風景慢慢玩。</p>
+          <a class="card-link" href="#contact">立即詢問 →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="card-body">
+          <h3>峇里島｜度假漫遊</h3>
+          <p>放鬆身心，享受慢活海島節奏。</p>
+          <a class="card-link" href="#contact">立即詢問 →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 聯絡區 -->
+  <section id="contact" class="section contact">
+    <h2>聯絡我們</h2>
+    <p class="section-desc">留下你的需求，我們會盡快與你聯繫。</p>
+
+    <div class="contact-box">
+      <div>
+        <p>📞 服務專線：04-2254-4773</p>
+        <p>📧 Email：liketravel@ladylike.com.tw</p>
+        <p>📍 台中市西屯區市政北二路282號30F</p>
+      </div>
+      <a class="btn primary" href="https://page.line.me/578gkxjo" target="_blank">加入 LINE 詢問</a>
+    </div>
+  </section>
 
   <footer class="footer">
-    <p>© 2026 我的品牌. All rights reserved.</p>
+    <p>© 2026 Like Travel. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
