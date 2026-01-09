@@ -1,0 +1,162 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+body { background: #0b0f15; color: #fff; line-height: 1.6; }
+
+/* Navbar */
+/* Navbar */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(11, 15, 21, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+/* 左側 Logo */
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+/* 中間選單 */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 6px;
+  border-radius: 10px;
+}
+
+.menu a:hover {
+  opacity: 1;
+  background: rgba(255,255,255,0.06);
+}
+
+/* 右側功能區 */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+/* 訂單查詢文字連結 */
+.nav-link {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 10px;
+  border-radius: 12px;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+
+/* 購物車 icon */
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  text-decoration: none;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 18px;
+}
+
+.nav-icon:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* 右側主 CTA 按鈕 */
+.nav-cta {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  background: rgba(59,130,246,0.95);
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 10px 30px rgba(59,130,246,0.18);
+}
+
+.nav-cta:hover {
+  background: rgba(37,99,235,1);
+}
+
+/* 手機版：把中間選單隱藏（先做簡單版） */
+@media (max-width: 820px) {
+  .menu {
+    display: none;
+  }
+}
+
+
+/* Hero */
+.hero { min-height: 78vh; display: flex; align-items: center; background: linear-gradient(120deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1600&q=80"); background-size: cover; background-position: center; }
+.hero-inner { max-width: 1100px; margin: auto; padding: 80px 20px; }
+.hero h1 { font-size: clamp(34px, 4vw, 56px); line-height: 1.1; margin-bottom: 18px; }
+.hero p { max-width: 680px; font-size: 18px; opacity: 0.9; margin-bottom: 24px; }
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 12px 18px; border-radius: 12px; font-weight: 700; text-decoration: none; }
+.btn.primary { background: #3b82f6; color: white; }
+.btn.primary:hover { background: #2563eb; }
+.btn.ghost { border: 1px solid rgba(255,255,255,0.35); color: white; background: rgba(255,255,255,0.06); }
+.btn.ghost:hover { background: rgba(255,255,255,0.12); }
+
+/* Sections */
+.section { max-width: 1100px; margin: auto; padding: 70px 20px; }
+.section h2 { font-size: 30px; margin-bottom: 12px; }
+.section-desc { opacity: 0.8; margin-bottom: 28px; max-width: 720px; }
+.section.alt { background: rgba(255,255,255,0.03); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+/* Features */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.feature { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.06); border-radius: 18px; padding: 18px; }
+.feature h3 { font-size: 18px; margin-bottom: 6px; }
+.feature p { opacity: 0.82; }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { border-radius: 18px; overflow: hidden; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.06); }
+.card-img { height: 170px; background-size: cover; background-position: center; }
+.card-body { padding: 16px; }
+.card-body h3 { font-size: 18px; margin-bottom: 6px; }
+.card-body p { opacity: 0.82; margin-bottom: 12px; }
+.card-link { color: #93c5fd; text-decoration: none; font-weight: 700; }
+
+/* Contact */
+.contact-box { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.06); border-radius: 18px; padding: 20px; }
+
+/* Footer */
+.footer { padding: 24px 20px; text-align: center; opacity: 0.7; border-top: 1px solid rgba(255,255,255,0.06); }
